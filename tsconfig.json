@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es2019",
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
+    "checkJs": true,
     "strict": true,
     "preserveSymlinks": true,
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "declaration": true,
-    "declarationDir": "dist",
+    "outDir": "dist",
     "skipLibCheck": true,
     "removeComments": false,
     "baseUrl": "."
