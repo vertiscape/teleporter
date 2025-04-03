@@ -50,7 +50,7 @@ Multiple test subjects from different regions, you must assign them `key` to let
 </Teleporter.In>
 ```
 
-P/S: [`@hookstate/core`](https://hookstate.js.org/)'s nested state really good frfr no cap, I only needed to declare one single store for the whole package, and it handles the rest, `name` in the top level of the state's object, values can act as a state itself; rerender only when it's modified, no rerender when other `name` fields modify, peak, idk why people don't use it as many as it deserves.
+P/S: [`@hookstate/core`](https://hookstate.js.org/)'s nested state really good frfr no cap, I only needed to declare one single store for the whole package, and it handles the rest, `name` in the top level of the state's object, values can act as a state itself; rerender only when it's modified, no rerender when other `name` fields modify, peak, idk why people didn't use it as many as it deserves.
 
 ## Why not `tunnel-rat`?
 
