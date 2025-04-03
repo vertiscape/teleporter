@@ -2,7 +2,7 @@
   "name": "@vertiscape/teleporter",
   "author": "neursh@github",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Teleports your components to anywhere, because you absolutely can!",
   "packageManager": "yarn@4.8.1",
   "type": "module",
