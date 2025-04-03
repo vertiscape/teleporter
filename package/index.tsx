@@ -12,7 +12,7 @@ const teleporterStore = hookstate<{
 
 const emptyQuery = new Map();
 
-export const Teleporter = {
+const Teleporter = {
   In: memo(
     (props: {
       children?: React.ReactElement | React.ReactElement[];
@@ -75,3 +75,5 @@ export const Teleporter = {
     );
   }),
 };
+
+export default Teleporter;
