@@ -2,7 +2,7 @@
   "name": "@vertiscape/teleporter",
   "author": "neursh@github",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.18",
   "description": "Teleports your components to anywhere, because you absolutely can!",
   "packageManager": "yarn@4.8.1",
   "type": "module",
@@ -24,6 +24,7 @@
     "@hookstate/core": "^4.0.2",
     "nanoid": "^5.1.5"
   },
+  "files": ["dist"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts"
