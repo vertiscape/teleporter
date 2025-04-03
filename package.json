@@ -2,7 +2,7 @@
   "name": "@vertiscape/teleporter",
   "author": "neursh@github",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Teleports your components to anywhere, because you absolutely can!",
   "packageManager": "yarn@4.8.1",
   "type": "module",
@@ -26,7 +26,6 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@types/react": "^19.1.0",
-    "nanoid": "^5.1.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "rollup": "^4.39.0",
@@ -34,12 +33,17 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@hookstate/core": "^4.0.2"
+    "@hookstate/core": "^4.0.2",
+    "nanoid": "^5.1.5"
   },
   "files": [
     "dist"
   ],
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts"
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs.js"
+  },
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts"
 }
