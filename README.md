@@ -21,6 +21,11 @@ npm i @vertiscape/teleporter
 
 ## Usage
 
+I didn't manage to get it to auto-import, so, manually it is :)
+```tsx
+import Teleporter from '@vertiscape/teleporter';
+```
+
 Use `Teleporter.In` to put your test subjects inside the chamber, remember to give it a name, we'll use it for later:
 ```tsx
 <Teleporter.In name="overworld">
