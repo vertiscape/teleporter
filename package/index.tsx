@@ -1,7 +1,6 @@
-import React from 'react';
 import { hookstate, useHookstate } from '@hookstate/core';
 import { nanoid } from 'nanoid';
-import { memo, useLayoutEffect, useMemo } from 'react';
+import React, { memo, useLayoutEffect, useMemo } from 'react';
 
 const teleporterStore = hookstate<{
   [name in string]: Map<
@@ -65,14 +64,16 @@ const Teleporter = {
   ),
   Out: memo((props: { name: string }) => {
     const tunnel = useHookstate(teleporterStore);
-
-    return (
-      <>
-        {[
-          ...(tunnel[props.name].get({ noproxy: true }) ?? emptyQuery).values(),
-        ].flat(1)}
-      </>
+    const components = useMemo(
+      () => tunnel[props.name].get({ noproxy: true }),
+      [tunnel]
     );
+
+    if (components) {
+      return <>{[...components.values()].flat(1)}</>;
+    }
+
+    return null;
   }),
 };
 
