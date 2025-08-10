@@ -15,7 +15,7 @@ npm i @vertiscape/teleporter
 > [!NOTE]
 > For `npm` on React 19, ` --force` argument must be added.
 > 
-> `@hookstate/core` can in fact run on React ^19.0.0 just fine, but the upstream package does not update `peerDependencies`, I'm looking forward to get this fixed.
+> `@hookstate/core` can in fact run on React ^19.0.0 just fine, but the upstream package does not update `peerDependencies`.
 
 ## Usage
 

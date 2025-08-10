@@ -1,17 +1,14 @@
 import { hookstate, useHookstate } from '@hookstate/core';
-import { nanoid } from 'nanoid';
-import React, { memo, useLayoutEffect, useMemo } from 'react';
+import React, { memo, useId, useLayoutEffect, useMemo } from 'react';
 
 const teleporterStore = hookstate<{
   [name in string]: Map<string, React.ReactNode | null>;
 }>({});
 
-const emptyQuery = new Map();
-
 const Teleporter = {
   In: memo((props: { children?: React.ReactNode; name: string }) => {
     const teleporter = useHookstate(teleporterStore);
-    const key = useMemo(() => nanoid(), []);
+    const key = useId();
 
     useLayoutEffect(() => {
       teleporter[props.name].set((state) => {

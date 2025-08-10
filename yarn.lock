@@ -452,7 +452,6 @@ __metadata:
   dependencies:
     "@hookstate/core": "npm:^4.0.2"
     "@types/react": "npm:^19.1.9"
-    nanoid: "npm:^5.1.5"
     react: "npm:^19.1.1"
     react-dom: "npm:^19.1.1"
     tsup: "npm:^8.5.0"
@@ -1163,15 +1162,6 @@ __metadata:
     object-assign: "npm:^4.0.1"
     thenify-all: "npm:^1.0.0"
   checksum: 10c0/103114e93f87362f0b56ab5b2e7245051ad0276b646e3902c98397d18bb8f4a77f2ea4a2c9d3ad516034ea3a56553b60d3f5f78220001ca4c404bd711bd0af39
-  languageName: node
-  linkType: hard
-
-"nanoid@npm:^5.1.5":
-  version: 5.1.5
-  resolution: "nanoid@npm:5.1.5"
-  bin:
-    nanoid: bin/nanoid.js
-  checksum: 10c0/e6004f1ad6c7123eeb037062c4441d44982037dc043aabb162457ef6986e99964ba98c63c975f96c547403beb0bf95bc537bd7bf9a09baf381656acdc2975c3c
   languageName: node
   linkType: hard
 

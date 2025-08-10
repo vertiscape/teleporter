@@ -2,7 +2,7 @@
   "name": "@vertiscape/teleporter",
   "author": "neursh@github",
   "license": "MIT",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Teleports your components to anywhere, because you absolutely can!",
   "packageManager": "yarn@4.8.1",
   "type": "module",
@@ -21,8 +21,7 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@hookstate/core": "^4.0.2",
-    "nanoid": "^5.1.5"
+    "@hookstate/core": "^4.0.2"
   },
   "files": [
     "dist"
