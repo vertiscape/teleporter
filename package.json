@@ -2,7 +2,7 @@
   "name": "@vertiscape/teleporter",
   "author": "neursh@github",
   "license": "MIT",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Teleports your components to anywhere, because you absolutely can!",
   "packageManager": "yarn@4.8.1",
   "type": "module",
@@ -14,17 +14,19 @@
     "url": "git+https://github.com/vertiscape/teleporter.git"
   },
   "devDependencies": {
-    "@types/react": "^19.1.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.2"
+    "@types/react": "^19.1.9",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
   },
   "dependencies": {
     "@hookstate/core": "^4.0.2",
     "nanoid": "^5.1.5"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts"
