@@ -2,7 +2,7 @@
   "name": "@vertiscape/teleporter",
   "author": "neursh@github",
   "license": "MIT",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Teleports your components to anywhere, because you absolutely can!",
   "packageManager": "yarn@4.8.1",
   "type": "module",
@@ -14,11 +14,17 @@
     "url": "git+https://github.com/vertiscape/teleporter.git"
   },
   "devDependencies": {
+    "@eslint/js": "^9.33.0",
     "@types/react": "^19.1.9",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tsup": "^8.5.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.0"
   },
   "dependencies": {
     "@hookstate/core": "^4.0.2"

@@ -16,11 +16,7 @@ const Teleporter = {
           state = new Map();
         }
 
-        if (Array.isArray(props.children)) {
-          state.set(key, props.children);
-        } else if (props.children) {
-          state.set(key, props.children);
-        }
+        state.set(key, props.children);
 
         return state;
       });
@@ -55,7 +51,7 @@ const Teleporter = {
     const tunnel = useHookstate(teleporterStore);
     const components = useMemo(
       () => tunnel[props.name].get({ noproxy: true }),
-      [tunnel]
+      [props.name, tunnel]
     );
 
     if (components) {
